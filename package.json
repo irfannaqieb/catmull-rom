@@ -1,0 +1,40 @@
+{
+  "name": "catmull-rom",
+  "version": "1.0.0",
+  "description": "Catmull-Rom spline interpolation library for generating smooth curves.",
+  "main": "dist/index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/irfannaqieb/catmull-rom.git"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && tsup",
+    "prepublish": "pnpm build"
+  },
+  "keywords": [
+    "catmull-rom",
+    "spline",
+    "curve",
+    "smoothing",
+    "interpolation"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": {
+    "name": "Irfan",
+    "email": "irfannaqieb@gmail.com",
+    "url": "https://irfannaqieb.pages.dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/irfannaqieb/catmull-rom/issues"
+  },
+  "homepage": "https://github.com/irfannaqieb/catmull-rom",
+  "devDependencies": {
+    "@types/node": "^18.18.6",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
