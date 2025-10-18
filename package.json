@@ -9,8 +9,8 @@
     "url": "https://github.com/irfannaqieb/catmull-rom.git"
   },
   "scripts": {
-    "build": "rm -rf ./dist && tsup",
-    "prepublish": "pnpm build"
+    "build": "tsup src/index.ts",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "catmull-rom",
