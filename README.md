@@ -1,6 +1,6 @@
 # Catmull-Rom Spline
 
-![Catmull-Rom Demo](demo/demo.gif)
+![Catmull-Rom Demo](demo/catmull-rom.gif)
 
 A TypeScript implementation of Catmull-Rom spline interpolation for generating smooth curves through control points.
 
