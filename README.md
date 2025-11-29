@@ -4,6 +4,12 @@
 
 A TypeScript implementation of Catmull-Rom spline interpolation for generating smooth curves through control points.
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/catmull-rom">
+    <img alt="downloads" src="https://img.shields.io/npm/dt/catmull-rom?label=downloads" />
+  </a>
+</p>
+
 ## Installation
 
 ```bash
