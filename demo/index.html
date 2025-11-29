@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catmull-Rom Spline Demo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin-top: 0;
+            color: #333;
+        }
+        .controls {
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        button {
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #fff;
+            color: #000;
+        }
+        button:hover {
+            background: #f0f0f0;
+        }
+        button:active {
+            background: #e0e0e0;
+        }
+        #info {
+            color: #666;
+            font-size: 14px;
+        }
+        canvas {
+            border: 1px solid #ddd;
+            cursor: crosshair;
+            display: block;
+            background: #fff;
+        }
+        .instructions {
+            margin-top: 15px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Catmull-Rom Spline Demo</h1>
+        <div class="controls">
+            <button id="clearBtn">Clear</button>
+            <span id="info">Click on the canvas to add control points</span>
+        </div>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <div class="instructions">
+            <p><strong>Instructions:</strong></p>
+            <ul>
+                <li>Click anywhere on the canvas to add control points</li>
+                <li>Click on an existing point to remove it</li>
+                <li>The curve will be generated automatically as you add points</li>
+                <li>Click "Clear" to remove all points and start over</li>
+            </ul>
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+
